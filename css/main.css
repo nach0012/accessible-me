@@ -1,375 +1,341 @@
-
-
 /* Body: Set default font family and improved background color for better contrast */
 body {
-    font-family: 'Roboto', Helvetica, sans-serif;
-    /* Changed from grey to light grey (#F5F5F5) for better contrast with black text */
-    background-color: #F5F5F5;
-    margin: 0;
-    padding: 0;
-    /* Improved base text color for better readability (near-black instead of pure black) */
-    color: #1A1A1A;
-    line-height: 1.6; /* Added for better readability */
+  font-family: "Roboto", Helvetica, sans-serif;
+  /* I Changed it from grey to light grey (#F5F5F5) for better contrast with black text */
+  background-color: #f5f5f5;
+  margin: 0;
+  padding: 0;
+  /* Improved base text color for better readability  */
+  color: #1a1a1a;
+  line-height: 1.6; /* Added for better readability */
 }
 
 /* Headings: Use custom font family for all heading levels */
-h1, h2, h3, h4, h5, h6 { 
-    font-family: 'Roboto', Helvetica, sans-serif;
-    color: #1A1A1A; /* Ensured dark color for contrast */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Roboto", Helvetica, sans-serif;
+  color: #1a1a1a; /* Ensured dark color for contrast */
 }
 
 /* Container: Centered content wrapper with max-width for readability */
-.container { 
-    max-width: 1080px; 
-    margin: 0 auto; 
-    padding: 0 1rem; 
+.container {
+  max-width: 1080px;
+  margin: 0 auto;
+  padding: 0 1rem;
 }
 
-/* Images: Responsive by default, scale to container width */
-img { 
-    width: 100%;
-    height: auto; 
+/*  Image responsiveness */
+img {
+  width: 100%;
+  height: auto; /* Added for better responsiveness */
 }
 
 /* Banner Image: Large hero image at top of page */
 .banner {
-    width: 100%; /* Full width of container */
-  
-    
-    margin-bottom: 2rem; /* Space below image */
- 
-    display: block; /* Removes any inline spacing */
+  width: 100%; /* Full width of container */
+
+  margin-bottom: 2rem; /* Space below image */
+
+  display: block; /* Removes any inline spacing */
 }
 
-
- /*   SKIP LINKS (Accessibility)*/
-
+/*   SKIP LINKS (Accessibility)*/
 
 /* Skip Links: Hidden by default but visible when focused via keyboard navigation
    These allow keyboard users to jump past repetitive navigation to main content */
 .skip-link {
-    position: absolute;
-    left: -9999px; /* Move far off screen - more reliable than top: -40px */
-    top: auto;
-    width: 1px;
-    height: 1px;
-    overflow: hidden;
-    background-color: #000000; /* High contrast black background */
-    color: #FFFFFF; /* White text for maximum contrast (21:1 ratio) */
-    padding: 0.75rem 1.5rem;
-    text-decoration: none;
-    font-weight: bold;
-    z-index: 9999; /* Ensure it appears above all other content */
-    border: 2px solid #FFFFFF; /* White border for additional visibility */
+  position: absolute;
+  left: -9999px;
+  top: 0;
+  background-color: #000000;
+  color: #ffffff;
+  padding: 0.75rem 1.5rem;
+  text-decoration: none;
+  font-weight: bold;
+  z-index: 9999;
+  border: 2px solid #ffffff;
 }
 
 /* Skip Link Focus State: Becomes visible when user tabs to it with keyboard */
 .skip-link:focus {
-    left: 10px; /* Move into view from left when focused */
-    top: 10px; /* Position near top of viewport */
-    width: auto; /* Reset width */
-    height: auto; /* Reset height */
-    overflow: visible; /* Make content visible */
-    outline: 3px solid #FFD700; /* Gold outline for high visibility */
-    outline-offset: 2px;
+  left: 10px; /* Move into view from left when focused */
+  top: 10px; /* Position near top of viewport */
+  width: auto; /* Reset width */
+  height: auto; /* Reset height */
+  overflow: visible; /* Make content visible */
+  outline: 3px solid #ffd700; /* Gold outline for high visibility */
+  outline-offset: 2px;
 }
 
-
-   /* HEADER & NAVIGATION */
-
+/* HEADER & NAVIGATION */
 
 /* Site Header: Main header container with improved contrast */
 .site-header {
-    background-color: #2C3E50; /* Dark blue-grey background for good contrast */
-    color: #FFFFFF; /* White text for high contrast */
-    padding: 1.5rem 0;
-    box-shadow: 0 2px 4px rgba(0,0,0,0.1); /* Subtle shadow for depth */
+  background-color: #2c3e50; /* Dark blue-grey background for good contrast */
+  color: #ffffff; /* White text for high contrast */
+  padding: 1.5rem 0;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
 }
 
 /* Main heading in header */
 .site-header h1 {
-    margin: 0 0 1rem 0;
-    color: #FFFFFF; /* White for contrast against dark header */
-    font-size: 2rem;
+  margin: 0 0 1rem 0;
+  color: #ffffff; /* White for contrast against dark header */
+  font-size: 2rem;
 }
 
 /* Main Navigation: Reset list styles and create horizontal layout */
-.main-nav ul { 
-    list-style: none; 
-    display: flex; 
-    flex-wrap: wrap; 
-    margin: 0; 
-    padding: 0; 
+.main-nav ul {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0;
+  padding: 0;
 }
 
 /* Navigation Items: Equal width distribution */
-.main-nav ul li { 
-    flex: 1; 
-    text-align: center; 
+.main-nav ul li {
+  flex: 1;
+  text-align: center;
 }
 
 /* Navigation Links: Styled for visibility and accessibility */
-.main-nav ul li a { 
-    display: block; 
-    /* Changed to white for contrast against dark header background */
-    color: #FFFFFF; 
-    text-decoration: none; 
-    font-size: 1.25rem;
-    padding: 0.75rem 1rem; /* Added padding for larger click target */
-    
+.main-nav ul li a {
+  display: block;
+  /* Changed to white for contrast against dark header background */
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 1.25rem;
+  padding: 0.75rem 1rem; /* Added padding for larger click target */
 }
 
 /* Navigation Link Hover State: Clear visual feedback */
 .main-nav ul li a:hover,
 .main-nav ul li a:focus {
-    /* Light background on hover for clear feedback */
-    background-color: #34495E; 
-    color: #FFD700; /* Gold text on hover for high contrast (8.5:1 ratio) */
-    outline: 2px solid #FFD700; /* Gold outline for focus state */
-    outline-offset: -2px;
+  /* Light background on hover for clear feedback */
+  background-color: #34495e;
+  color: #ffd700; /* Gold text on hover for high contrast (8.5:1 ratio) */
+  outline: 2px solid #ffd700; /* Gold outline for focus state */
+  outline-offset: -2px;
 }
 
 /* Current Page Indicator: Shows which page user is on */
 .main-nav ul li a[aria-current="page"] {
-    background-color: #1A252F; /* Darker background for current page */
-    border-bottom: 3px solid #FFD700; /* Gold underline for current page indicator */
-    font-weight: bold;
+  background-color: #1a252f; /* Darker background for current page */
+  border-bottom: 3px solid #ffd700; /* Gold underline for current page indicator */
+  font-weight: bold;
 }
 
-
-    /* MAIN CONTENT SECTIONS */
-  
+/* MAIN CONTENT SECTIONS */
 
 /* All sections: Consistent spacing and improved readability */
 section {
-    margin: 2rem 0;
-    padding: 2rem;
-    background-color: #FFFFFF; /* White background for content sections */
-    border-radius: 8px; /* Rounded corners for modern look */
-    box-shadow: 0 2px 8px rgba(0,0,0,0.1); /* Subtle shadow for depth */
+  margin: 2rem 0;
+  padding: 2rem;
+  background-color: #ffffff; /* White background for content sections */
+  border-radius: 8px; /* Rounded corners for modern look */
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
 }
 
 /* Section Headings: Clear visual hierarchy */
 section h2 {
-    color: #2C3E50; /* Dark blue-grey for headings (contrast ratio 12.6:1) */
-    margin-top: 0;
-    border-bottom: 3px solid #3498DB; /* Blue accent line under headings */
-    padding-bottom: 0.5rem;
-    font-size: 1.75rem;
+  color: #2c3e50; /* Dark blue-grey for headings (contrast ratio 12.6:1) */
+  margin-top: 0;
+  border-bottom: 3px solid #3498db; /* Blue accent line under headings */
+  padding-bottom: 0.5rem;
+  font-size: 1.75rem;
 }
 
 /* Paragraphs: Improved readability with spacing */
 section p {
-    margin: 1rem 0;
-    font-size: 1.1rem;
+  margin: 1rem 0;
+  font-size: 1.1rem;
 }
 
 /*  OWNER SECTION */
-  
-
-  
 
 /* Owner Details List: Remove default list styling */
 .owner-details {
-    list-style: none;
-    padding: 0;
-    margin: 1rem 0;
+  list-style: none;
+  padding: 0;
+  margin: 1rem 0;
 }
 
 /* Owner Details List Items: Clear spacing between items */
 .owner-details li {
-    padding: 0.5rem 0;
-    font-size: 1.1rem;
+  padding: 0.5rem 0;
+  font-size: 1.1rem;
 }
 
 /* Strong text within lists for labels */
 .owner-details strong {
-    color: #2C3E50; /* Dark color for emphasis */
-    display: inline-block;
-    min-width: 80px; /* Align values in a column */
+  color: #2c3e50; /* Dark color for emphasis */
+  display: inline-block;
+  min-width: 80px; /* Align values in a column */
 }
 
 /* Links in owner section: High contrast and clear hover states */
 .owner-details a {
-    color: #2980B9; /* Blue link color (contrast ratio 4.6:1) */
-    text-decoration: underline;
-    transition: color 0.3s ease;
+  color: #2980b9; /* Blue link color (contrast ratio 4.6:1) */
+  text-decoration: underline;
+  transition: color 0.3s ease;
 }
 
 .owner-details a:hover,
 .owner-details a:focus {
-    color: #1A5490; /* Darker blue on hover (contrast ratio 7.2:1) */
-    text-decoration: none;
-    outline: 2px solid #2980B9;
-    
+  color: #1a5490; /* Darker blue on hover (contrast ratio 7.2:1) */
+  text-decoration: none;
+  outline: 2px solid #2980b9;
 }
 
-
 /* ADDRESS SECTION */
-   
 
 /* Address: Styled for clarity and readability */
 address {
-    font-style: normal; /* Remove default italic styling */
-    font-size: 1.1rem;
-    line-height: 1.8;
-    margin: 1rem 0;
-    padding: 1rem;
-    background-color: #ECF0F1; /* Light grey background for address block */
-    border-left: 4px solid #3498DB; /* Blue accent border */
-    border-radius: 4px;
+  font-style: normal; /* Remove default italic styling */
+  font-size: 1.1rem;
+  line-height: 1.8;
+  margin: 1rem 0;
+  padding: 1rem;
+  background-color: #ecf0f1; /* Light grey background for address block */
+  border-left: 4px solid #3498db; /* Blue accent border */
+  border-radius: 4px;
 }
 
 address strong {
-    color: #2C3E50; /* Dark color for studio name */
-    font-size: 1.2rem;
+  color: #2c3e50; /* Dark color for studio name */
+  font-size: 1.2rem;
 }
 
-
- /* CONTACT FORM */
-   
+/* CONTACT FORM */
 
 /* Form Groups: Container for each form field with spacing */
 .form-group {
-    margin-bottom: 1.5rem;
+  margin-bottom: 1.5rem;
 }
 
 /* Form Labels: Clear, readable labels above inputs */
 form label {
-    display: block;
-    font-weight: bold;
-    margin-bottom: 0.5rem;
-    color: #2C3E50; /* Dark color for contrast */
-    font-size: 1.1rem;
-}
-
-/* Required Field Indicator: Red asterisk for required fields */
-.required-indicator {
-    color: #E74C3C; /* Red color for required indicator (contrast ratio 5.3:1) */
-    font-weight: bold;
+  display: block;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+  color: #2c3e50; /* Dark color for contrast */
+  font-size: 1.1rem;
 }
 
 /* Form Inputs and Textareas: Accessible and clearly styled */
-form input, 
-form textarea { 
-    display: block; 
-    width: 100%; 
-    margin-bottom: 1rem; 
-    padding: 0.75rem 1rem;
-    font-size: 1rem;
-    font-family: inherit; /* Use same font as body */
-    border: 2px solid #BDC3C7; /* Medium grey border */
-    border-radius: 4px;
-    background-color: #FFFFFF; /* White background */
-    color: #1A1A1A; /* Dark text */
-    
+form input,
+form textarea {
+  display: block;
+  width: 100%;
+  margin-bottom: 1rem;
+  padding: 0.75rem 1rem;
+  font-size: 1rem;
+  font-family: inherit; /* Use same font as body */
+  border: 2px solid #bdc3c7; /* Medium grey border */
+  border-radius: 4px;
+  background-color: #ffffff; /* White background */
+  color: #1a1a1a; /* Dark text */
 }
 
 /* Input Focus State: Clear visual feedback when field is active */
-form input:focus, 
+form input:focus,
 form textarea:focus {
-    outline: none; /* Remove default outline */
-    border-color: #3498DB; /* Blue border on focus */
-    box-shadow: 0 0 0 3px rgba(52, 152, 219, 0.25); /* Blue glow effect */
+  outline: none; /* Remove default outline */
+  border-color: #3498db; /* Blue border on focus */
+  box-shadow: 0 0 0 3px rgba(52, 152, 219, 0.25); /* Blue glow effect */
 }
 
 /* Textarea Specific Styles: Fixed height and disabled resize */
-form textarea { 
-    min-height: 150px; 
-    max-height: 150px; 
-    height: 150px; 
-    resize: none; /* Prevent user from resizing */
+form textarea {
+  min-height: 150px;
+  max-height: 150px;
+  height: 150px;
 }
 
 /* Submit Button: High contrast and clear interactive states */
-form button { 
-    background-color: #3498DB; /* Blue background (changed from transparent) */
-    color: #FFFFFF; /* White text for high contrast (7:1 ratio) */
-    border: 2px solid #2C3E50; /* Dark border for definition */
-    padding: 1rem 2rem; 
-    text-transform: uppercase; 
-    font-weight: bold;
-    font-size: 1rem;
-    cursor: pointer; /* Show it's clickable */
-    border-radius: 4px;
-  
+form button {
+  background-color: #3498db; /* Blue background (changed from transparent) */
+  color: #ffffff; /* White text for high contrast (7:1 ratio) */
+  border: 2px solid #2c3e50; /* Dark border for definition */
+  padding: 1rem 2rem;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 1rem;
+  border-radius: 4px;
 }
 
 /* Button Hover State: Clear feedback for interactive element */
 form button:hover {
-    background-color: #2980B9; /* Darker blue on hover */
-    transform: translateY(-2px); /* Subtle lift effect */
-    box-shadow: 0 4px 8px rgba(0,0,0,0.2); /* Shadow for depth */
+  background-color: #2980b9; /* Darker blue on hover */
+  transform: translateY(-2px); /* Subtle lift effect */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Shadow for depth */
 }
 
 /* Button Focus State: Keyboard navigation accessibility */
 form button:focus {
-    outline: 3px solid #FFD700; /* Gold outline for focus */
-    outline-offset: 3px;
+  outline: 3px solid #ffd700; /* Gold outline for focus */
+  outline-offset: 3px;
 }
 
-
-
- /* FOOTER */
-  
+/* FOOTER */
 
 /* Site Footer: Contrasting background with proper spacing */
-.site-footer { 
-    padding: 2rem 0;
-    background-color: #2C3E50; /* Dark background matching header */
-    color: #FFFFFF; /* White text for high contrast */
-    text-align: center;
+.site-footer {
+  padding: 2rem 0;
+  background-color: #2c3e50; /* Dark background matching header */
+  color: #ffffff; /* White text for high contrast */
+  text-align: center;
 }
 
 .site-footer p {
-    margin: 0;
-    font-size: 1rem;
+  margin: 0;
+  font-size: 1rem;
 }
 
-
- /* UTILITY CLASSES*/
-  
+/* UTILITY CLASSES*/
 
 /* Visually Hidden: Hide content visually but keep it available to screen readers
    Used for additional instructions and context for assistive technology users */
 .visually-hidden {
-    position: absolute;
-    width: 1px;
-    height: 1px;
-    margin: -1px;
-    padding: 0;
-    overflow: hidden;
-    clip: rect(0, 0, 0, 0);
-    white-space: nowrap;
-    border: 0;
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  overflow: hidden;
+  white-space: nowrap;
+  border: 0;
 }
 
- 
- /*  RESPONSIVE DESIGN*/
-   
+/* I used media queiry to improve User Experience and Design*/
 
 /* Tablet and smaller screens */
 @media (max-width: 768px) {
-    /* Stack navigation vertically on small screens */
-    .main-nav ul {
-        flex-direction: column;
-    }
-    
-    .main-nav ul li {
-        border-bottom: 1px solid #34495E;
-    }
-    
-    /* Reduce heading sizes on mobile */
-    .site-header h1 {
-        font-size: 1.5rem;
-    }
-    
-    section h2 {
-        font-size: 1.5rem;
-    }
-    
-    /* Reduce section padding on mobile */
-    section {
-        padding: 1rem;
-    }
+  /* Stack navigation vertically on small screens */
+  .main-nav ul {
+    flex-direction: column;
+  }
+
+  .main-nav ul li {
+    border-bottom: 1px solid #34495e;
+  }
+
+  /* Reduce heading sizes on mobile */
+  .site-header h1 {
+    font-size: 1.5rem;
+  }
+
+  section h2 {
+    font-size: 1.5rem;
+  }
+
+  /* Reduce section padding on mobile */
+  section {
+    padding: 1rem;
+  }
 }
