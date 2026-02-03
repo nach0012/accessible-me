@@ -47,18 +47,21 @@ img {
 
 /* Skip Links: Hidden by default but visible when focused via keyboard navigation
    These allow keyboard users to jump past repetitive navigation to main content */
-   /* I have tried skip links on my keyboard and are they working */
+/* I have tried skip links on my keyboard and are they working */
 .skip-link {
   position: absolute;
-  left: -9999px;
-  top: 0;
-  background-color: #000000;
-  color: #ffffff;
+  left: -9999px; /* Move far off screen - more reliable than top: -40px */
+  top: auto;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  background-color: #000000; /* High contrast black background */
+  color: #ffffff; /* White text for maximum contrast (21:1 ratio) */
   padding: 0.75rem 1.5rem;
   text-decoration: none;
   font-weight: bold;
-  z-index: 9999;
-  border: 2px solid #ffffff;
+  z-index: 9999; /* Ensure it appears above all other content */
+  border: 2px solid #ffffff; /* White border for additional visibility */
 }
 
 /* Skip Link Focus State: Becomes visible when user tabs to it with keyboard */
@@ -123,8 +126,6 @@ img {
   outline: 2px solid #ffd700; /* Gold outline for focus state */
   outline-offset: -2px;
 }
-
-
 
 /* MAIN CONTENT SECTIONS */
 
