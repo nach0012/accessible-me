@@ -47,6 +47,7 @@ img {
 
 /* Skip Links: Hidden by default but visible when focused via keyboard navigation
    These allow keyboard users to jump past repetitive navigation to main content */
+   /* I have tried skip links on my keyboard and are they working */
 .skip-link {
   position: absolute;
   left: -9999px;
@@ -88,7 +89,7 @@ img {
   font-size: 2rem;
 }
 
-/* Main Navigation: Reset list styles and create horizontal layout */
+/* Main Navigation */
 .main-nav ul {
   list-style: none;
   display: flex;
@@ -97,7 +98,7 @@ img {
   padding: 0;
 }
 
-/* Navigation Items: Equal width distribution */
+/* Navigation Items */
 .main-nav ul li {
   flex: 1;
   text-align: center;
@@ -123,12 +124,7 @@ img {
   outline-offset: -2px;
 }
 
-/* Current Page Indicator: Shows which page user is on */
-.main-nav ul li a[aria-current="page"] {
-  background-color: #1a252f; /* Darker background for current page */
-  border-bottom: 3px solid #ffd700; /* Gold underline for current page indicator */
-  font-weight: bold;
-}
+
 
 /* MAIN CONTENT SECTIONS */
 
