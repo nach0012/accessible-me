@@ -177,7 +177,7 @@ section p {
 
 /* Links in owner section: High contrast and clear hover states */
 .owner-details a {
-  color: #2980b9; /* Blue link color (contrast ratio 4.6:1) */
+  color: #1a5490; /* Blue link color (contrast ratio 4.6:1) */
   text-decoration: underline;
   transition: color 0.3s ease;
 }
@@ -269,6 +269,7 @@ form button {
 /* Button Hover State: Clear feedback for interactive element */
 form button:hover {
   background-color: #2980b9; /* Darker blue on hover */
+  color: #ffffff;
   transform: translateY(-2px); /* Subtle lift effect */
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Shadow for depth */
 }
