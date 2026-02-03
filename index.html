@@ -1,223 +1,170 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <!--  I adjusted the META-->
-    <meta charset="UTF-8" >
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" >
-    <!-- I changed the title name -->
-    <title>Jam Box Studios</title>
-    <link rel="stylesheet" href="css/main.css" >
-    <link
-      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Stick+No+Bills:wgt@400;700&display=swap"
-      rel="stylesheet"
-    >
-  </head>
-  <body>
-    <!-- Skip Links: to help keyboard users to skip directly over the navigation to the main content of the page , and they are important for accessibility and for reader screen and User Experience and Design-->
-    <a href="#main-content" class="skip-link">Skip to main content</a>
-    <a href="#contact-form" class="skip-link">Skip to contact form</a>
-    <a href="#footer" class="skip-link">Skip to footer</a>
 
-    <!-- I fixed the semantic HTML5 elements and add (header, main, footer, nav, section, address)-->
-    <!-- Header: Contains site branding and main navigation -->
-    <!-- Header with Organization schema -->
-    <header
-      class="site-header"
-      itemscope
-      itemtype="https://schema.org/Organization"
-    >
-      <div class="container">
-        <h1 itemprop="name">Jam Box Studios</h1>
+<head>
+  <!--  I adjusted the META-->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- I changed the title name -->
+  <title>Jam Box Studios</title>
+  <link rel="stylesheet" href="css/main.css">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Stick+No+Bills:wgt@400;700&display=swap"
+    rel="stylesheet">
+</head>
 
-        <!-- Main Navigation: Primary site navigation with semantic nav element and ARIA role -->
-        <nav class="main-nav" aria-label="Main navigation">
-          <ul>
-            <!-- Each navigation item uses semantic list structure for better screen reader support -->
-            <li><a href="#home">Home</a></li>
-            <li><a href="#products">Products</a></li>
-            <li><a href="#reservation">Reservation</a></li>
-            <li><a href="#studio">Studio</a></li>
-          </ul>
-        </nav>
-      </div>
-    </header>
+<body>
+  <!-- Skip Links: to help keyboard users to skip directly over the navigation to the main content of the page , and they are important for accessibility and for reader screen and User Experience and Design-->
+  <a href="#main-content" class="skip-link">Skip to main content</a>
+  <a href="#contact-form" class="skip-link">Skip to contact form</a>
+  <a href="#footer" class="skip-link">Skip to footer</a>
 
-    <!-- Main Content: Primary content area of the page -->
-    <main id="main-content">
-      <div class="container">
-        <!-- Hero Section: Introduction to the studio with descriptive headings -->
-        <section class="hero-section" aria-labelledby="welcome-heading">
-          <!-- Banner Image: Main visual for the studio with descriptive alt text for accessibility , even though isn't directly related to Jam Box Studios, because alt text is essential for accessibility. It allows screen readers to "read" and describe the image to visually impaired users, helping them understand the fun and creative vibe of the studio without seeing it. -->
-          <img
-            src="https://picsum.photos/1200/900"
-            class="banner"
-            alt="ONE OF NYC’S MOST UNIQUE BLEND OF MUSIC & AUDIO SERVICES"
-          >
+  <!-- I fixed the semantic HTML5 elements and add (header, main, footer, nav, section, address)-->
+  <!-- Header: Contains site branding and main navigation -->
+  <!-- Header with Organization schema -->
+  <header class="site-header" role="banner" itemscope itemtype="https://schema.org/Organization">
+    <div class="container">
+      <h1 itemprop="name">Jam Box Studios</h1>
 
-          <h2 id="welcome-heading">Welcome to Jam Box</h2>
+      <!-- Main Navigation: Primary site navigation with semantic nav element and ARIA role -->
+      <nav class="main-nav" aria-label="Main navigation" main role="main" role="navigation">
+        <ul>
+          <!-- Each navigation item uses semantic list structure for better screen reader support -->
+          <li><a href="#home">Home</a></li>
+          <li><a href="#products">Products</a></li>
+          <li><a href="#reservation">Reservation</a></li>
+          <li><a href="#studio">Studio</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
 
-          <!-- lorem paragraphs tags  -->
-          <p>
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Temporibus
-            laboriosam praesentium nostrum ipsa eveniet, officia deserunt cumque
-            eius esse enim, ipsam accusantium autem nihil quaerat sequi
-            perferendis optio quia veritatis.
-          </p>
+  <!-- Main Content: Primary content area of the page -->
+  <main id="main-content">
+    <div class="container">
+      <!-- Hero Section: Introduction to the studio with descriptive headings -->
+      <section class="hero-section" aria-labelledby="welcome-heading">
+        <!-- Banner Image: Main visual for the studio with descriptive alt text for accessibility , even though isn't directly related to Jam Box Studios, because alt text is essential for accessibility. It allows screen readers to "read" and describe the image to visually impaired users, helping them understand the fun and creative vibe of the studio without seeing it. -->
+        <img src="https://picsum.photos/1200/900" class="banner"
+          alt="ONE OF NYC’S MOST UNIQUE BLEND OF MUSIC & AUDIO SERVICES">
 
-          <p>
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Veniam
-            perferendis expedita sed itaque odit ipsam omnis, eos voluptates
-            magni fugit culpa voluptatibus, inventore eaque, eligendi
-            voluptatum! Voluptate iusto error voluptatibus.
-          </p>
-        </section>
+        <h2 id="welcome-heading">Welcome to Jam Box</h2>
 
-        <!-- Owner Information Section: Details about the studio owner with schema markup -->
+        <!-- lorem paragraphs tags  -->
+        <p>
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Temporibus
+          laboriosam praesentium nostrum ipsa eveniet, officia deserunt cumque
+          eius esse enim, ipsam accusantium autem nihil quaerat sequi
+          perferendis optio quia veritatis.
+        </p>
 
-        <section
-          class="owner-section"
-          aria-labelledby="owner-heading"
-          itemscope
-          itemtype="https://schema.org/Person"
-        >
-          <h2 id="owner-heading">Meet the Owner</h2>
+        <p>
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Veniam
+          perferendis expedita sed itaque odit ipsam omnis, eos voluptates
+          magni fugit culpa voluptatibus, inventore eaque, eligendi
+          voluptatum! Voluptate iusto error voluptatibus.
+        </p>
+      </section>
 
-          <ul class="owner-details">
-            <li>
-              <strong>Name:</strong>
-              <span itemprop="name">John Doe</span>
-            </li>
-            <li>
-              <strong>Title:</strong>
-              <span itemprop="jobTitle">CEO</span>
-            </li>
-            <li>
-              <strong>Email:</strong>
-              <a
-                href="mailto:johnjoe@jambox.ca"
-                itemprop="email"
-                aria-label="Email John Doe at johnjoe@jambox.ca"
-              >
-                johnjoe@jambox.ca
-              </a>
-            </li>
-            <li>
-              <strong>Phone:</strong>
-              <a
-                href="tel:+16130000000"
-                itemprop="telephone"
-                aria-label="Call John Doe at 613-000-0000"
-              >
-                613-000-0000
-              </a>
-            </li>
-          </ul>
-        </section>
+      <!-- Owner Information Section: Details about the studio owner with schema markup -->
 
-        <!-- Address Section: Studio location with schema markup for postal address -->
-        <section class="address-section" aria-labelledby="address-heading">
-          <h2 id="address-heading">Address</h2>
+      <section class="owner-section" aria-labelledby="owner-heading" itemscope itemtype="https://schema.org/Person">
+        <h2 id="owner-heading">Meet the Owner</h2>
 
-          <!-- Address with schema.org markup for structured location data -->
-          <address itemscope itemtype="https://schema.org/PostalAddress">
-            <strong itemprop="name">Jambox Studios</strong><br >
-            <span itemprop="streetAddress">123 Guitar Road</span>,<br >
-            <span itemprop="addressLocality">Musicville</span>,
-            <span itemprop="addressRegion">Danceistan</span><br >
-            <span itemprop="postalCode">B3T 0L0</span>
-          </address>
-        </section>
+        <ul class="owner-details">
+          <li>
+            <strong>Name:</strong>
+            <span itemprop="name">John Doe</span>
+          </li>
+          <li>
+            <strong>Title:</strong>
+            <span itemprop="jobTitle">CEO</span>
+          </li>
+          <li>
+            <strong>Email:</strong>
+            <a href="mailto:johnjoe@jambox.ca" itemprop="email" aria-label="Email John Doe at johnjoe@jambox.ca">
+              johnjoe@jambox.ca
+            </a>
+          </li>
+          <li>
+            <strong>Phone:</strong>
+            <a href="tel:+16130000000" itemprop="telephone" aria-label="Call John Doe at 613-000-0000">
+              613-000-0000
+            </a>
+          </li>
+        </ul>
+      </section>
 
-        <!-- Contact Form Section: Form for users to send messages -->
-        <section class="contact-section" aria-labelledby="contact-heading">
-          <h2 id="contact-heading">Contact Us</h2>
+      <!-- Address Section: Studio location with schema markup for postal address -->
+      <section class="address-section" aria-labelledby="address-heading">
+        <h2 id="address-heading">Address</h2>
 
-          <!-- Contact form with proper labels, ARIA attributes, and required field indicators -->
-          <form
-            id="contact-form"
-            action="/submit"
-            method="POST"
-           
-            aria-label="Contact form"
-          >
-            <!-- Full Name Input -->
-            <div class="form-group">
-              <label for="full-name"> Full Name </label>
-              <input
-                type="text"
-                id="full-name"
-                name="fullName"
-                required
-                aria-describedby="name-instructions"
-                placeholder="Enter your full name"
-              >
-              <!-- Hidden instruction for screen readers for User Experience and Design-->
-              <span id="name-instructions" class="visually-hidden"
-                >Please enter your first and last name</span
-              >
-            </div>
+        <!-- Address with schema.org markup for structured location data -->
+        <address itemscope itemtype="https://schema.org/PostalAddress">
+          <strong itemprop="name">Jambox Studios</strong><br>
+          <span itemprop="streetAddress">123 Guitar Road</span>,<br>
+          <span itemprop="addressLocality">Musicville</span>,
+          <span itemprop="addressRegion">Danceistan</span><br>
+          <span itemprop="postalCode">B3T 0L0</span>
+        </address>
+      </section>
 
-            <!-- Email Input -->
-            <div class="form-group">
-              <label for="email"> Email </label>
-              <input
-                type="email"
-                id="email"
-                name="email"
-                required
-                aria-describedby="email-instructions"
-                placeholder="your.email@example.com"
-              >
-              <!-- Hidden instruction for screen readers for User Experience and Design-->
-              <span id="email-instructions" class="visually-hidden"
-                >Please enter a valid email address</span
-              >
-            </div>
+      <!-- Contact Form Section: Form for users to send messages -->
+      <section class="contact-section" role="form" aria-labelledby="contact-heading">
+        <h2 id="contact-heading">Contact Us</h2>
 
-            <!-- Subject Input-->
-            <div class="form-group">
-              <label for="subject"> Subject </label>
-              <input
-                type="text"
-                id="subject"
-                name="subject"
-                required
-                placeholder="What is your message about?"
-              >
-              <!-- Hidden instruction for screen readers for better User Experience and Design -->
-            </div>
+        <!-- Contact form with proper labels, ARIA attributes, and required field indicators -->
+        <form id="contact-form" action="/submit" method="POST" aria-label="Contact form">
+          <!-- Full Name Input -->
+          <div class="form-group">
+            <label for="full-name"> Full Name </label>
+            <input type="text" id="full-name" name="fullName" required aria-describedby="name-instructions"
+              placeholder="Enter your full name">
+            <!-- Hidden instruction for screen readers for User Experience and Design-->
+            <span id="name-instructions" class="visually-hidden">Please enter your first and last name</span>
+          </div>
 
-            <!-- Message Textarea -->
-            <div class="form-group">
-              <label for="message"> Your Message </label>
-              <textarea
-                id="message"
-                name="message"
-                required
-                aria-describedby="message-instructions"
-                placeholder="Enter your message here"
-              ></textarea>
-              <!-- Character limit instruction for screen readers -->
-              <span id="message-instructions" class="visually-hidden"
-                >Maximum 500 characters</span
-              >
-            </div>
+          <!-- Email Input -->
+          <div class="form-group">
+            <label for="email"> Email </label>
+            <input type="email" id="email" name="email" required aria-describedby="email-instructions"
+              placeholder="your.email@example.com">
+            <!-- Hidden instruction for screen readers for User Experience and Design-->
+            <span id="email-instructions" class="visually-hidden">Please enter a valid email address</span>
+          </div>
 
-            <!-- Submit Button: Accessible button with clear action label -->
-            <button type="submit" aria-label="Send contact form message">
-              Send
-            </button>
-          </form>
-        </section>
-      </div>
-    </main>
+          <!-- Subject Input-->
+          <div class="form-group">
+            <label for="subject"> Subject </label>
+            <input type="text" id="subject" name="subject" required placeholder="What is your message about?">
+            <!-- Hidden instruction for screen readers for better User Experience and Design -->
+          </div>
 
-    <!-- Footer: Contains copyright and additional site information -->
-    <footer id="footer" class="site-footer">
-      <div class="container">
-        <!-- Copyright notice with the year -->
-        <p>&copy; 2021 Jam Box Studios. All rights reserved.</p>
-      </div>
-    </footer>
-  </body>
+          <!-- Message Textarea -->
+          <div class="form-group">
+            <label for="message"> Your Message </label>
+            <textarea id="message" name="message" required aria-describedby="message-instructions"
+              placeholder="Enter your message here"></textarea>
+            <!-- Character limit instruction for screen readers -->
+            <span id="message-instructions" class="visually-hidden">Maximum 500 characters</span>
+          </div>
+
+          <!-- Submit Button: Accessible button with clear action label -->
+          <button type="submit" aria-label="Send contact form message">
+            Send
+          </button>
+        </form>
+      </section>
+    </div>
+  </main>
+
+  <!-- Footer: Contains copyright and additional site information -->
+  <footer id="footer" class="site-footer" role="contentinfo">
+    <div class="container">
+      <!-- Copyright notice with the year -->
+      <p>&copy; 2021 Jam Box Studios. All rights reserved.</p>
+    </div>
+  </footer>
+</body>
+
 </html>
