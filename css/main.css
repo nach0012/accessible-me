@@ -47,7 +47,7 @@ img {
 
 /* Skip Links: Hidden by default but visible when focused via keyboard navigation
    These allow keyboard users to jump past repetitive navigation to main content */
-/* I have tried skip links on my keyboard and are they working */
+/* I have tried skip links on my keyboard and they are working */
 .skip-link {
   position: absolute;
   left: -9999px; /* Move far off screen - more reliable than top: -40px */
